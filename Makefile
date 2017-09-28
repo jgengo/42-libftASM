@@ -32,3 +32,4 @@ $(OBJ_FD):
 	@/bin/mkdir $(OBJ_FD); for DIR in $(SRC_FD); do /bin/mkdir $(OBJ_FD)/$$DIR; done
 
 
+.PHONY: all clean fclean re

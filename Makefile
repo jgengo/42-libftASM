@@ -28,10 +28,6 @@ fclean: clean
 re: fclean all
 
 $(OBJ_FD):
-	@/bin/mkdir $(OBJ_FD); \
-		for DIR in $(SRC_FD); \
-		do \
-			/bin/mkdir $(OBJ_FD)/$$DIR; \
-		done
+	@/bin/mkdir $(OBJ_FD); for DIR in $(SRC_FD); do /bin/mkdir $(OBJ_FD)/$$DIR; done
 
 

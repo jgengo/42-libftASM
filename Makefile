@@ -1,5 +1,3 @@
-# makefile var
-
 NAME = libfts.a
 
 SRCS = ft_bzero.s ft_isalnum.s ft_isalpha.s ft_isascii.s ft_isdigit.s ft_isprint.s ft_tolower.s ft_toupper.s
@@ -13,6 +11,9 @@ OBJS = $(addprefix $(OBJ_FD)/, $(SRCS_FULL:.s=.o) )
 all: $(NAME)
 
 $(NAME): $(OBJ_FD) $(OBJS)
+	@ar rc $(NAME) $(OBJS)
+	@ranlib $(NAME)
+	@printf "\e[36m%-51s\e[0m\e[32m[✓]\e[0m\n" "created $(NAME)"
 
 $(addprefix $(OBJ_FD)/,%.o) : %.s
 	@printf "Compiling \e[35m%-41s\e[0m" "$@"

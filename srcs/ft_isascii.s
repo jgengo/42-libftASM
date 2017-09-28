@@ -2,7 +2,7 @@ global _ft_isascii
 
 section .text
 
-_ft_isascii
+_ft_isascii:
 	cmp rdi, 0
 	jl false
 	cmp rdi, 177

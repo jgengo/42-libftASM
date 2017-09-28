@@ -13,7 +13,7 @@ _ft_isalnum:
 	jle true
 	cmp rdi, 'a'
 	jl false
-	cmp rdi 'z'
+	cmp rdi, 'z'
 	jle true
 	jmp false
 

@@ -14,15 +14,15 @@ Le project `libft_ASM` a pour but de vous faire coder une minilib en ASM. Vous a
 
 ## Part 1 - Fonctions simples de la libC
 
-- [ ] bzero
+- [x] bzero
 - [ ] strcat
-- [ ] isalpha
-- [ ] isdigit
-- [ ] isalnum
-- [ ] isascii
-- [ ] isprint
-- [ ] toupper
-- [ ] tolower
+- [x] isalpha
+- [x] isdigit
+- [x] isalnum
+- [x] isascii
+- [x] isprint
+- [x] toupper
+- [x] tolower
 - [ ] puts
 ____
 - [ ] All done and checked
